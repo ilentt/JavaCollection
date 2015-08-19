@@ -17,6 +17,7 @@ public class DuplicatedList {
 		System.out.println("Size of duplicated list: " + this.dupList.size());
 		System.out.println("Element list: " +this.dupList.toString());
 		
+		// version 1: used HashSet
 		HashSet<String> listToSet = new HashSet<String>(this.dupList);
 		List<String> listWithOutDuplicated = new ArrayList<String>(listToSet);
 		
@@ -28,6 +29,7 @@ public class DuplicatedList {
 		System.out.println("Size of duplicated list: " + this.dupList.size());
 		System.out.println("Element list: " +this.dupList.toString());
 		
+		// version 2: used LinkedHasdSet
 		LinkedHashSet<String> listToSet = new LinkedHashSet<String>(this.dupList);
 		List<String> listWithOutDuplicated = new ArrayList<String>(listToSet);
 		
